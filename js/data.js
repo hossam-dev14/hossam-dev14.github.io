@@ -70,20 +70,6 @@ knowledges =
 ];
 
 
-// certifications = 
-// [
-//   {
-//     "id": 1,
-//     "img" : "ES6",
-//     "name" : "ES6",
-//     "source" : "https://www.sololearn.com/",
-//     "date" : "Febrary 27, 2019",
-//     "verify_cert" : "ES6",
-//     "profile" : "ES6",
-//   },
-// ]
-
-
 works = 
 [
   {
