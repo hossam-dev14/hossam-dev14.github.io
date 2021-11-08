@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
 
     <!-- SEO -->
     <meta name="keywords" content="portfolio, responsive, build, website, web, design">
-    <meta name="description" content="build your portfolio website, responsive for all devices and easy to use.">
+    <meta name="description" content="build your responsive website.">
 
     <!-- Simple Line Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.0/css/simple-line-icons.min.css">
@@ -18,18 +18,19 @@
 	
     <!-- favicon icon-->
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-</head>
+
+  </head>
 <body>
 
   <!-- Loading -->
   <div class="loader">
     <img src="./images/preloader.gif" alt="Loading...">
   </div>
-
+  
   <main class="page">
     <!-- Sidebar -->
     <aside class="sidebar scrollbar" id="scrollStyle">
-      <!-- Profile -->
+      <!-- profile -->
       <figure class="profile">
         <img src="images/avatar.jpg" alt="hossam-dev14">
         <figcaption class="photo-title">
@@ -41,16 +42,16 @@
       <!-- Navbar -->
       <nav class="navbar">
         <div class="links-wrapper">
-          <a href="index.html" class="link active" data-link>
+          <a href="index.html" class="link">
             <i class="icon-home icon"></i>
             <span>Home</span></a>
-          <a href="about.html" class="link" data-link></li>
+          <a href="about.html" class="link"></li>
             <i class="icon-user icon"></i>
             <span>About</span></a>
-          <a href="portfolio.html" class="link" data-link>
+          <a href="portfolio.html" class="link active">
             <i class="icon-grid icon"></i>
             <span>Portfolio</span></a>
-          <a href="contact.html" class="link" data-link>
+          <a href="contact.html" class="link">
             <i class="icon-envelope icon"></i>
             <span>Contact</span></a>
         </div>
@@ -64,18 +65,20 @@
         <a href="https://www.linkedin.com/in/houssam-ettoubali-05a3841ba/" class="linkdin" target="_blank"><i class="icon-social-github"></i></a>
       </div>
     </aside>
+
+
     <!-- Content -->
     <div class="content">
 
-      <!-- Home -->
-      <div class="home">
-        <h2>Hello there!</h2>
-        <h1>I am Hossam a Front-End Web Developer</h1>
-        <p></p>
-      </div>
+      <section class="section">
+        <div class="title">
+          <h2>Portfolio</h2>
+        </div>
 
-      <!-- Quote -->
-      
+        <!-- Portfolio -->
+        <div class="portfolio"></div>
+      </section>
+
       <!-- Footer -->
       <div class="footer">
         <p>Created with <span>&hearts;</span> by 
@@ -83,6 +86,7 @@
         </p>
       </div>
     </div>
+
   </main>
 
   <!-- jQuery files -->
@@ -91,8 +95,45 @@
   <!-- Nice Scroll -->
   <script src="./js/jquery.nicescroll.min.js"></script>
 
+  <!-- Data file -->
+  <script src="./js/data.js" ></script>
+
   <!-- Costume.js -->
   <script src="./js/main.js"></script>
+  
+  <script>
+    const portfolio = document.querySelector('.portfolio');
+
+    (function(){
+      works.map(e => {
+        portfolio.innerHTML += 
+          `<div class="item" key=${e.id}>
+            <div class="item-img">
+              <img src=${e.img} loading="lazy" alt=${e.alt}>
+              <div class="item-img-overlay">
+                <div class="overlay-info full-width">
+                  <h3>${e.title}</h6>
+                  <div class="item-links">
+                    <a href=${e.prev_img} class="popimg" target="_blank">
+                      <i class="icon-frame"></i>
+                    </a>
+                    <a href=${e.preview} target="_blank">
+                      <i class="icon-eye"></i>
+                    </a>
+                    <a href=${e.github} target="_blank">
+                      <i class="icon-social-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>`
+        })
+    })();
+    
+  </script>
+
+
 
 </body>
 </html>
