@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hossam-dev14</title>
+
+    <!-- SEO -->
+    <meta name="keywords" content="portfolio, responsive, build, website, web, design">
+    <meta name="description" content="build your portfolio website, responsive for all devices and easy to use.">
+
+    <!-- Simple Line Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.0/css/simple-line-icons.min.css">
+
+    <!-- main style -->
+    <link rel="stylesheet" href="./css/main.css">
+	
+    <!-- favicon icon-->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- Loading -->
+  <div class="loader">
+    <img src="./images/preloader.gif" alt="Loading...">
+  </div>
+
+  <main class="page">
+    <!-- Sidebar -->
+    <aside class="sidebar scrollbar" id="scrollStyle">
+      <!-- Profile -->
+      <figure class="profile">
+        <img src="images/avatar.jpg" alt="hossam-dev14">
+        <figcaption class="photo-title">
+          <a href="index.html">Hossam Ettoubali</a>
+          <h3>Front-End Developer</h3>
+        </figcaption>
+      </figure>
+
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="links-wrapper">
+          <a href="index.html" class="link active" data-link>
+            <i class="icon-home icon"></i>
+            <span>Home</span></a>
+          <a href="about.html" class="link" data-link></li>
+            <i class="icon-user icon"></i>
+            <span>About</span></a>
+          <a href="portfolio.html" class="link" data-link>
+            <i class="icon-grid icon"></i>
+            <span>Portfolio</span></a>
+          <a href="contact.html" class="link" data-link>
+            <i class="icon-envelope icon"></i>
+            <span>Contact</span></a>
+        </div>
+      </nav>
+
+      <!-- Social Links -->
+      <div class="social">
+        <a href="#" class="twitter" target="_blank"><i class="icon-social-pinterest"></i></a>
+        <a href="#" class="instagram" target="_blank"><i class="icon-social-tumblr"></i></a>
+        <a href="#" class="github" target="_blank"><i class="icon-social-linkedin"></i></a>
+        <a href="#" class="linkdin" target="_blank"><i class="icon-social-github"></i></a>
+      </div>
+    </aside>
+    <!-- Content -->
+    <div class="content">
+
+     <!--  <video class="video-bg" autoplay loop muted style="z-index: -1">
+        <source src="free.mp4" type="video/mp4">
+      </video> -->
+
+      <!-- Home -->
+      <div class="home">
+        <h2>Hello there!</h2>
+        <h1>I am Hossam a Front-End Web Developer</h1>
+        <p></p>
+      </div>
+
+      <!-- Quote -->
+      <div class="quote">
+        <h2 id="outer-txt">
+          Quote
+          <span>Quote</span>
+          <span>Quote</span>
+          <!-- <span id="inner-txt">"Be your self"</span> -->
+          <span id="inner-txt"></span>
+        </h2>
+      </div>
+      
+      <!-- Footer -->
+      <div class="footer">
+        <p>Created with <span>&hearts;</span> by 
+          <a href="https://github.com/hossam-dev14" target="_blank">hossam-dev14</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- jQuery files -->
+  <script src="./js/jquery3.4.1.min.js"></script>
+
+  <!-- Nice Scroll -->
+  <script src="./js/jquery.nicescroll.min.js"></script>
+
+  <!-- Data file -->
+  <script src="./js/data.js" ></script>
+
+  <!-- Costume.js -->
+  <script src="./js/main.js"></script>
+
+  <script>
+    // Quote
+    const text = document.querySelector('.quote #inner-txt');
+    const header = document.querySelector('.quote #outer-txt');
+    const childOne = document.querySelector('.quote span:nth-child(1)');
+    const childTwo = document.querySelector('.quote span:nth-child(2)');
+    
+    fetch("https://type.fit/api/quotes")
+    .then(res => res.json())
+    .then(quote => {
+      let n = quote.length;
+
+      // window.addEventListener('load', e => {
+      //   e[Math.floor(Math.random() * n )].text
+      // });
+    
+    header.addEventListener('mouseenter', e => {
+      let random = Math.floor(Math.random() * n );
+
+      let randomQuote = quote[random].text;
+      text.innerHTML = `${randomQuote}<br/> 
+                      <q class='author'>${quote[random].author}</q>`;
+      // #2dedc9
+      });
+    });
+
+    header.addEventListener('mouseover', e => {
+      if (text.offsetHeight >= 97 && text.offsetHeight >= 86 ) {
+        childOne.style.transform=`translateY(-${text.offsetHeight-47}px)`;
+        childTwo.style.transform=`translateY(${text.offsetHeight-47}px)`;
+      } if (text.offsetHeight >= 82 && text.offsetHeight >= 75 ) {
+        childOne.style.transform=`translateY(-${text.offsetHeight-35}px)`;
+        childTwo.style.transform=`translateY(${text.offsetHeight-35}px)`;
+      } else if (text.offsetHeight >= 64){
+        childOne.style.transform=`translateY(-${text.offsetHeight-27}px)`;
+        childTwo.style.transform=`translateY(${text.offsetHeight-27}px)`;
+      } else if (text.offsetHeight >= 46){
+        childOne.style.transform=`translateY(-${text.offsetHeight-19}px)`;
+        childTwo.style.transform=`translateY(${text.offsetHeight-19}px)`;
+      } else if (text.offsetHeight >= 53 && text.offsetHeight >= 39){
+        childOne.style.transform=`translateY(-${text.offsetHeight-12}px)`;
+        childTwo.style.transform=`translateY(${text.offsetHeight-12}px)`;
+      } else{
+        childOne.style.transform=`translateY(-27px)`;
+        childTwo.style.transform=`translateY(27px)`;
+      }
+    });
+
+    header.addEventListener('mouseleave', e => {
+      childOne.style.transform=`translateY(0)`;
+      childTwo.style.transform=`translateY(0)`;
+    });
+
+    // var Button=document.getElementById('Button');
+    // /* Clear all previous hover classes */
+    // Button.classList.remove('HoverClass1','HoverClass2');
+    // /* Set the desired hover class */
+    // Button.classList.add('HoverClass1');
+
+    // const textHeight = text.addEventListener('moseenter', e =>{
+    //   if (text.offsetHeight >= 75) {
+    //     childOne.style.transform=`translateY(-${text.offsetHeight}px)`;
+    //     childTwo.style.transform=`translateY(${text.offsetHeight}px)`;
+    //   } 
+      // else {
+      //   childOne.style.transform=`translateY(-18px)`;
+      //   childTwo.style.transform=`translateY(18px)`;
+      // }
+    // })
+
+    
+    
+    
+    // function randomQuote() {
+    //   return ;
+    // }
+
+    // function textChange() {
+    // 
+    //  // console.log('sts');
+    // }
+
+    // textChange()
+    // window.addEventListener('load', textChange);
+    // header.addEventListener('mouseenter', textChange);
+
+  </script>
+
+</body>
+</html>
