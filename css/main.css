@@ -784,8 +784,6 @@ form input[type=submit]:hover{
     bottom: -13px;
   }
   .navbar .link:hover span{left: 0;} 
-/*   .navbar .link:hover .icon{left: 19px;}  */
-
   .navbar .links-wrapper link:hover {
     box-shadow: inset 0px 0px 3.3px 1.5px #c7c7c7;
    }
@@ -818,6 +816,9 @@ form input[type=submit]:hover{
   .quote h2 #inner-txt{top: 34%;}
 
   .skills .features {min-width: 83%}
+ 
+
+  .overlay-info { margin: 4.5rem auto !important;}
 
   /* CONTACT */
   .contact .email {
@@ -866,9 +867,20 @@ form input[type=submit]:hover{
   .content .home {margin-bottom: 1.7rem;}
   .content .text_contact, 
   .contact .contact-info, 
-  .contact form { padding: 0 1rem; }
- 
+  .contact form { padding: 0 1rem;}
+
+  .overlay-info { margin: 3.9rem auto !important;}
+  .overlay-info h3 {
+    font-size: 1.1rem !important;
+    margin-bottom: 1.3rem !important;
+  } 
+  .overlay-info a {
+    font-size: 1.1rem !important;
+    padding: 0 1.2rem !important;
+  }
+
 }
+
 
   /* 320px ---------- */
 @media screen and (max-width: 320px){
@@ -884,8 +896,10 @@ form input[type=submit]:hover{
     min-width: 16rem;
     margin-right: 0;
   }
-}
 
+  .overlay-info h3,
+  .overlay-info a {font-size: 1rem !important;}
+}
 
 /*  SCROLL BAR STYLING */
  #scrollStyle::-webkit-scrollbar-track{
@@ -973,7 +987,7 @@ form input[type=submit]:hover{
 }
 
 .overlay-info{
-  margin: 4.1rem auto;
+  margin: 4rem auto;
   padding: 1rem;
   background: var(--black);
 }
@@ -986,7 +1000,7 @@ form input[type=submit]:hover{
 
 .overlay-info a{
   color: var(--white);
-  padding: 0 2.3rem;
+  padding: 0 2rem;
   font-size: 1.3rem;
 }
 .overlay-info a:hover{
