@@ -5,6 +5,7 @@
  Theme URL: https://hossam-dev14.github.io/
  Description: hossam-dev14 is a portfolio website
  Author: hossam-dev14
+ Author URL: https://hossam-dev14.github.io/
  Version: 1.0.0
 
 
@@ -292,7 +293,7 @@ img {
 .navbar .link:hover span,
 .navbar .link:hover .icon{
   color: var(--white);
-  left: 20px;
+  /* left: 20px; */
   transition: all 0.5s ease-out 0s;
 }
 
@@ -774,7 +775,7 @@ form input[type=submit]:hover{
     font-size: 1.1rem;
     width: auto;
     background: transparent;
-    left: 20px;
+    left: 15px;
     top: 0;
   }
   .navbar .link span {
@@ -791,7 +792,7 @@ form input[type=submit]:hover{
    }
 
    .navbar .active .icon, .active span{
-    left: 19px;
+    left: 15px;
   }
   
   .sidebar .social { 
@@ -847,6 +848,7 @@ form input[type=submit]:hover{
     height: 14rem;
     min-width: 18rem;
     width: 19rem;
+    margin-left: 0;
   }
 
   .item-img img {height: 14rem;}
