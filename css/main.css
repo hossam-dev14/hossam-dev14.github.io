@@ -169,7 +169,7 @@ img {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 10.7rem;
+  width: 11rem;
   height: 100vh;
   margin: 0;
   transition: all 0.5s ease 0s;
@@ -177,7 +177,7 @@ img {
   background-color: var(--silver);
   background-color: var(--clr-primary);
   box-shadow: 0px 0px 3px #ccc;
-  z-index: 22145;
+  z-index: 22;
   overflow-y: overlay;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -201,11 +201,11 @@ img {
 }
 .sidebar .profile img{
     display: block;
-    margin: 7px auto;
+    margin: 1rem auto;
     border-radius: 14%;
     transition: all .3s ease-in-out;
     background-color: #b2b2c8;
-    width: 47%;
+    width: 67%;
     height: auto;
 }
 .sidebar .profile img:hover{
@@ -222,9 +222,9 @@ img {
 }
 
 .sidebar .profile figcaption h3{
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
   font-size: .9rem;
-  padding: .5rem;
+  padding: .3rem;
   background-color: var(--whitesmoke);
   color: var(--clr--primary-1);
   border-radius: .3rem;
