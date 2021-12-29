@@ -103,27 +103,30 @@
             </div>
           </div>
 
-          <form action="https://formspree.io/f/xjvlkbek" method="POST" >
+          <form method="POST" action="contact.php" >
             <div class="input-group">
-              <input type="text" name="name" id="name" placeholder="Enter name" required >
+              <input type="text" name="name" id="name" placeholder="Enter name"required >
+              <span class="error_message">Please enter at least 5 characters</span>
+
             </div>
             
             <div class="input-group">
-              <input type="email" name="_replyto" id="email" placeholder="Enter amail" required >
+              <input type="email" name="email" id="email" placeholder="Enter amail" required >
               <span class="error_message">Please enter a valid email</span>
             </div>
 
             <div class="input-group">
               <input type="number" name="phone" id="phone" placeholder="Enter phone">
+              <span class="error_message">Please enter a valid email</span>
+
             </div>
             
             <div class="input-group">
               <textarea name="message" id="message" cols="30" rows="7" minlength="15" placeholder="Message" required ></textarea>
+              <span class="error_message">Please enter at least 15 characters</span>
             </div>
             
             <input type="submit" value="Send">
-
-            <div id="form-status" style="padding: 1rem 0 .7rem; font-size: 1.13rem;"></div>
           </form>
         </div>
       </section>
@@ -183,10 +186,11 @@
     //  send_Button.setAttribute('disabled', 'true');
     //  send_Button.style.cursor = "wait";
     //}
-    
+
     if(validateEmail(email.value) == true) {
-	form.reset();
-    }
+    	form.reset();
+	}
+
 	
   })
 
