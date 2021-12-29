@@ -184,7 +184,9 @@
     //  send_Button.style.cursor = "wait";
     //}
     
-    form.reset();
+    if(validateEmail(email.value) == true) {
+	form.reset();
+    }
 	
   })
 
