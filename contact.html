@@ -148,55 +148,51 @@
   <script src="./js/main.js"></script>
 
   <script>
-    //--------- Submition Form
+    //---------- Validation Form
     const form = document.querySelector('.contact form');
+    const name = document.querySelector('.contact #name');
     const email = document.querySelector('.contact #email');
+    const message = document.querySelector('.contact #message');
+    const error_msg = document.querySelector('.contact span.error_message');
+    const send_Button = document.querySelector('.contact input[type = submit]');
 
-    async function handleSubmit(e) {
+    form.addEventListener('submit', (e) => {
       e.preventDefault();
-      var status = document.getElementById("form-status");
-      var data = new FormData(e.target);
 
-      fetch(e.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-            'Accept': 'application/json'
-        }
-      }).then(response => {
-        status.textContent = "Thanks for your submission!";
-        status.style.color= 'var(--green-light)'
-        form.reset()
-      }).catch(error => {
-        status.textContent = "Oops! There was a problem submitting your form";
-        status.style.color= 'var(--red-light)'
-      });
-    }
-
-    // Submit event
-    if (email.nextElementSibling.classList.value !== 'd_block') {
-      
-      form.addEventListener("submit", handleSubmit)
+    // Validate Name
+    if (name.value.trim().length >= 3) {
+      name.nextElementSibling.classList.remove('d_block');
+      name.classList.remove('error_shadow');
+    } else {
+      name.nextElementSibling.classList.add('d_block');
+      name.classList.add('error_shadow');
     }
 
     // Validate Email
-    email.addEventListener('keyup', e =>{
-      if (validateEmail(email.value) === true) {
-        email.nextElementSibling.classList.remove('d_block');
-      } else {
-        email.nextElementSibling.classList.add('d_block');
-      }
+    if (validateEmail(email.value) == true) {
+      email.nextElementSibling.classList.remove('d_block');
+      email.classList.remove('error_shadow');
+    } else {
+      email.nextElementSibling.classList.add('d_block');
+      email.classList.add('error_shadow');
+    }
 
-      if (email.value == '') {
-        email.nextElementSibling.classList.remove('d_block');
-      }
-    })
+    // Button Value
+    //if (name.value.trim().length >= 3 && validateEmail(email.value) == true) {
+    //  send_Button.setAttribute('value', 'Sending...');
+    //  send_Button.setAttribute('disabled', 'true');
+    //  send_Button.style.cursor = "wait";
+    //}
     
-    // Validate Email
-    function validateEmail(email) {
-      const regEx = /\S+@\S+\.\S+/;
-      return regEx.test(String(email).toLowerCase()); 
-    }
+    form.reset();
+	
+  })
+
+  // Validate Email
+  function validateEmail(email) {
+    const regEx = /\S+@\S+\.\S+/;
+    return regEx.test(String(email).toLowerCase()); 
+  }
   </script>
   
 </body>
