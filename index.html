@@ -102,6 +102,53 @@
 
   <!-- Costume.js -->
   <script src="./js/main.js"></script>
+<script>
+    // Quote
+    const text = document.querySelector('.quote #inner-txt');
+    const header = document.querySelector('.quote #outer-txt');
+    const childOne = document.querySelector('.quote span:nth-child(1)');
+    const childTwo = document.querySelector('.quote span:nth-child(2)');
+    
+    fetch("https://type.fit/api/quotes")
+    .then(res => res.json())
+    .then(quote => {
+      let n = quote.length;
+    
+    header.addEventListener('mouseenter', e => {
+      let random = Math.floor(Math.random() * n );
 
+      let randomQuote = quote[random].text;
+      text.innerHTML = `${randomQuote}<br/><q class='author'>${quote[random].author}</q>`;
+      });
+    });
+
+    header.addEventListener('mouseover', e => {
+      if (text.offsetHeight >= 97 && text.offsetHeight >= 86 ) {
+        childOne.style.transform=`translateY(-${text.offsetHeight-47}px)`;
+        childTwo.style.transform=`translateY(${text.offsetHeight-47}px)`;
+      } if (text.offsetHeight >= 82 && text.offsetHeight >= 75 ) {
+        childOne.style.transform=`translateY(-${text.offsetHeight-35}px)`;
+        childTwo.style.transform=`translateY(${text.offsetHeight-35}px)`;
+      } else if (text.offsetHeight >= 64){
+        childOne.style.transform=`translateY(-${text.offsetHeight-27}px)`;
+        childTwo.style.transform=`translateY(${text.offsetHeight-27}px)`;
+      } else if (text.offsetHeight >= 46){
+        childOne.style.transform=`translateY(-${text.offsetHeight-19}px)`;
+        childTwo.style.transform=`translateY(${text.offsetHeight-19}px)`;
+      } else if (text.offsetHeight >= 53 && text.offsetHeight >= 39){
+        childOne.style.transform=`translateY(-${text.offsetHeight-12}px)`;
+        childTwo.style.transform=`translateY(${text.offsetHeight-12}px)`;
+      } else{
+        childOne.style.transform=`translateY(-27px)`;
+        childTwo.style.transform=`translateY(27px)`;
+      }
+    });
+
+    header.addEventListener('mouseleave', e => {
+      childOne.style.transform=`translateY(0)`;
+      childTwo.style.transform=`translateY(0)`;
+    });
+
+  </script>
 </body>
 </html>
