@@ -937,7 +937,7 @@ input[type=submit]:focus{
     font-size: 1.1rem;
     width: auto;
     background: transparent;
-    left: 1.3rem;
+    left: 1.2rem;
     top: 0;
   }
   .navbar .link span {
@@ -947,14 +947,14 @@ input[type=submit]:focus{
     bottom: -.9rem;
   }
   .navbar .link:hover span{left: 0;} 
-  .navbar .link:hover .icon{left: .9rem;} 
+  .navbar .link:hover .icon{left: 1.2rem;} 
 
   .navbar .links-wrapper link:hover {
     box-shadow: inset 0px 0px 3.3px 1.5px #c7c7c7;
    }
 
    .navbar .active .icon, .active span{
-    left: 1.3rem;
+    left: 1.2rem;
   }
   
   .sidebar .social { 
