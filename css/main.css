@@ -2,11 +2,11 @@
 /*-------------------------------------------------
 
  Theme Name: hossam-dev14
- Theme URL: https://hossam-dev14.github.io/
+ Theme URL: https://hossam-dev14.github.io/Portfolio/
  Description: hossam-dev14 is a portfolio website
  Author: hossam-dev14
- Author URL: https://hossam-dev14.github.io/
- Version: 1.0.0
+ Author URL: http://hossam-dev14.com
+ Version: 1.0
 
 
  Primary Color : #190c3c
@@ -152,7 +152,7 @@ a:hover{ color: var(--grey);}
   h3 {font-size: 1.175rem;}
   h4 {font-size: 1rem;}
   p {font-size: 1rem;}
-  body {font-size: 1rem; }
+  body {font-size: 1rem;}
   h1, h2, h3, h4 {line-height: 1;}
 }
 
@@ -169,11 +169,11 @@ img {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 13rem;
+  width: 10.7rem;
   height: 100vh;
   margin: 0;
   transition: all 0.5s ease 0s;
-  padding: 1.7rem 1rem .7rem;
+  padding: .7rem 1rem .7rem;
   background-color: var(--silver);
   background-color: var(--clr-primary);
   box-shadow: 0px 0px 3px #ccc;
@@ -181,6 +181,10 @@ img {
   overflow-y: overlay;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: stretch;
 }
 .sidebar .wrap{
   display: grid;
@@ -190,14 +194,18 @@ img {
 .sidebar .menu-icon:hover .icon-close{ 
   color: var(--red-light);
 } 
-
+.profile{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
 .sidebar .profile img{
     display: block;
     margin: 7px auto;
-    border-radius: 15%;
+    border-radius: 14%;
     transition: all .3s ease-in-out;
     background-color: #b2b2c8;
-    width: 6rem;
+    width: 47%;
     height: auto;
 }
 .sidebar .profile img:hover{
@@ -205,9 +213,8 @@ img {
 }
 .sidebar .profile .photo-title{
     text-align: center;
-    font-size: 1.12rem;
     font-weight: 500;
-    margin-top: 1.3rem;
+    margin-top: .3rem;
 }
 
 .sidebar .profile .photo-title a {
@@ -216,11 +223,12 @@ img {
 
 .sidebar .profile figcaption h3{
   margin-top: 0.5rem;
-  font-size: 1rem;
+  font-size: .9rem;
   padding: .5rem;
   background-color: var(--whitesmoke);
-  color: var(var(--clr-secondary-1));
+  color: var(--clr--primary-1);
   border-radius: .3rem;
+  width: 100%;
 }
 
 .sidebar .social{
@@ -266,7 +274,7 @@ img {
 .navbar .links-wrapper .link{
   display: flex;
   text-align: center;
-  min-width: 4.3rem;
+  min-width: 7rem;
   margin: 0.3rem;
   border: none;
   outline: none;
@@ -293,8 +301,8 @@ img {
 .navbar .link:hover span,
 .navbar .link:hover .icon{
   color: var(--white);
-  left: 16px;
-  transition: all 0.5s ease-out 0s;
+  left: .5rem;
+  transition: left 0.5s ease-out 0s;
 }
 
 .navbar .link .icon{
@@ -304,16 +312,16 @@ img {
   width: 2.7rem;
   font-size: 1.3em;
   position: absolute;
-  left: 50px;
+  left: 2.5rem;
 }
 
 .navbar .link span{
-  margin-left: .7rem;
+  margin-left: 1rem;
   color: var(--whitesmoke);
   line-height: 3rem;
-  font-size: .95rem;
+  font-size: .94rem;
   position: relative;
-  left: 116px;
+  left: 7rem;
 }
 
 .navbar .active{
@@ -321,7 +329,7 @@ img {
 }
 .navbar .active .icon, .navbar .active span{
   color: var(--white);
-  left: 15px;
+  left: .5rem;
 }
 
 .footer{
@@ -371,7 +379,7 @@ img {
 
 .content .home{
   margin: 0 auto;
-  padding-top: 8rem;
+  padding-top: 3rem;
   width: 66vw;
 }
 
@@ -530,9 +538,9 @@ section .title span{
   padding-top: .7rem;
 }
 .certifications div img{
-  width: 21rem;
+  width: 23rem;
   height: 14rem;
-  min-width: 18rem;
+  min-width: 20rem;
   border-radius: 3px;
   margin: 0 2rem .7rem;
   box-shadow: 1px 1px 10px var(--silver);
@@ -556,12 +564,13 @@ section .title span{
   flex-wrap: wrap;
   justify-content: center;
   grid-gap: 1rem;
+  margin-top: 1rem;
 }
 .item{
   height: 16rem;
-  width: 23rem;
-  min-width: 20rem;
-  max-width: 24rem;
+  width: 24rem;
+  min-width: 23rem;
+  max-width: 27rem;
   margin: 0 9px 14px;
   border-radius: 6px;
   flex: 0 45%;
@@ -579,7 +588,7 @@ section .title span{
 
 .item-img img{
   width: 100%;
-  height: 100%;
+  height: 16rem;
   border-radius: 6px;
 }
 
@@ -684,11 +693,16 @@ form input[type=submit]:hover{
   filter: drop-shadow(0px 0px .1px #ad65e2);
 }
 
+
 /* Validation */
 .error_shadow{
   box-shadow: 0px 0px 5px 1px var(--red-light);
 }
 .error_message{
+  /* position: absolute; */
+  /* top: 55px; */
+  /* right: 0px; */
+  /* bottom: 0; */
   font-size: .85rem;
   color: var(--red-light);
   margin: 0.37rem 0.3rem;
@@ -698,10 +712,158 @@ form input[type=submit]:hover{
 
 .d_block{display: block;}
 
+/* input:valid, 
+textarea:valid {
+  border: 1px solid var(--green-light);
+} */
+
+/* input:valid:focus, 
+textarea:valid:focus{
+  box-shadow: 0px 0px 5px 1px var(--green-light);
+} 
+
+input:invalid, 
+textarea:invalid{
+  border: 1px solid var(--red-light);
+} */
+
+
+/* input:invalid:focus, 
+textarea:invalid:focus{
+  box-shadow: 0px 0px 5px 1px var(--red-light);
+} */
+
+input[type=submit],
+input[type=submit]:focus{ 
+  border:none;
+  box-shadow: none;
+}
 
 
 /* QUOTE*/
+.quote{
+  margin: 5rem auto;
+  width: 66vw;
+  position: relative;
+  cursor: pointer;
+}
+.quote h2{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  font-size: 8rem;
+  color: transparent;
+  text-transform: uppercase;
+  font-family: var(--ff-primary);
+}
 
+/* Top Text*/
+.quote h2 span:nth-child(1){
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #000;
+  transition: 0.5s;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50% );
+  overflow: hidden;
+}
+.quote h2:hover span:nth-child(1){
+  transform: translateY(-27px);
+  color: var(--grey);
+}
+.height100:hover {
+  transform: translateY(-55px) !important;
+}
+.height82:hover {
+  transform: translateY(-47px) !important;
+}
+.height64:hover {
+  transform: translateY(-37px) !important;
+}
+.height53:hover {
+  transform: translateY(-31px) !important ;
+}
+
+
+.quote h2 span:nth-child(1),
+.quote h2 span:nth-child(2){
+  text-shadow: 3px 3px 6px var(--grey);
+}
+
+.quote h2:hover span:nth-child(1),
+.quote h2:hover span:nth-child(2){
+  text-shadow: 3px 5px 7px var(--darkGrey);
+}
+
+/* Buttom Text*/
+.quote h2 span:nth-child(2){
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #000;
+  transition: 0.4s;
+  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+  overflow: hidden;
+}
+.quote h2:hover span:nth-child(2){
+  transform: translateY(27px);
+  color: var(--darkGrey);
+}
+.height100:hover {
+  transform: translateY(55px) !important;
+}
+.height82:hover {
+  transform: translateY(47px) !important;
+}
+.height64:hover {
+  transform: translateY(37px) !important;
+}
+.height53:hover {
+  transform: translateY(31px) !important ;
+}
+
+
+/* Inner Text*/
+.quote h2 #inner-txt{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) scaleY(0);
+  width: 95%;
+  color: var(--whitesmoke);
+  /* background: var( --clr-secondary-2); */
+  background: linear-gradient(to left, #03a9f4, #2e3055);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: initial;
+  padding: 6px;
+  padding-bottom: .1rem;
+  margin-left: 0.5rem;
+  transition: 0.5s;
+  border-radius: 0.3rem;
+  /* display: block; */
+}
+
+.quote h2:hover #inner-txt{
+  transform: translateY(-50%) scaleY(1);
+}
+
+.author {
+  float: right;
+  color: #eee;
+  margin: .15rem;
+  padding: .15rem;
+  padding-bottom: 0;
+  font-style: italic;
+  font-size: .83rem;
+  text-shadow: 0px 0px 3px #777;
+}
 
 
 /* 15 RESPONSIVE --------------------------- */
@@ -716,7 +878,7 @@ form input[type=submit]:hover{
   }
 
   .item-img img {
-    height: 100%;
+    height: 16rem;
   }
   .skills .features {min-width: 76%}
   .contact {
@@ -739,10 +901,10 @@ form input[type=submit]:hover{
     align-items: center;
   }
   .sidebar .menu-icon { display: none;}
-  .sidebar .profile img {margin: 1.3rem 2rem;}
+  .sidebar .profile img {margin: 1.7rem 1rem .5rem;}
   .sidebar .profile figcaption {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 400;
     margin-top: 1.3rem;
   }
@@ -765,31 +927,34 @@ form input[type=submit]:hover{
     height: 3.9rem;
     box-shadow: none;
   }
-  .navbar .link {
+  .navbar .links-wrapper .link {
     padding: 0px .3rem;
     height: 3.9rem;
+    min-width: 5rem;
   }
   .navbar .link .icon {
     padding: 0.7rem;
     font-size: 1.1rem;
     width: auto;
     background: transparent;
-    left: 14px;
+    left: 1.3rem;
     top: 0;
   }
   .navbar .link span {
     margin-left: 0;
     line-height: 3.9rem;
     left: 0;
-    bottom: -13px;
+    bottom: -.9rem;
   }
   .navbar .link:hover span{left: 0;} 
+  .navbar .link:hover .icon{left: .9rem;} 
+
   .navbar .links-wrapper link:hover {
     box-shadow: inset 0px 0px 3.3px 1.5px #c7c7c7;
    }
 
    .navbar .active .icon, .active span{
-    left: 15px;
+    left: 1.3rem;
   }
   
   .sidebar .social { 
@@ -805,20 +970,14 @@ form input[type=submit]:hover{
   }
   .content .home {
     width: 63vw;
-    padding-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 3rem
   }
-
   .content h2 {padding-top: 3.7rem;}
   .content h1 {font-size: 2rem}
-
-  .quote h2 {font-size: 6.7rem;}
+  
   .quote h2 #inner-txt{top: 34%;}
 
   .skills .features {min-width: 83%}
- 
-
-  .overlay-info { margin: 4.5rem auto !important;}
 
   /* CONTACT */
   .contact .email {
@@ -841,18 +1000,22 @@ form input[type=submit]:hover{
   }
 }
 
+  /* 685px ---------- */
+/* @media screen and (max-height: 685px){
+  .sidebar {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+} */
 
   /* 568px ---------- */
 @media screen and (max-width: 568px){
   .item {
     height: 14rem;
-    min-width: 17rem;
-    width: 19rem;
-    margin-right: 0;
-    margin-left: 0;
+    min-width: 20.3rem;
   }
 
-  .item-img img {height: 14rem;}
+  .item-img img { height: 14rem; }
 
   .link a {
     display: flex;
@@ -862,44 +1025,24 @@ form input[type=submit]:hover{
     justify-content: space-between;
   }
 
-  .quote h2 {font-size: 4.7rem;}
-
-  .content .home {margin-bottom: 1.7rem;}
   .content .text_contact, 
   .contact .contact-info, 
-  .contact form { padding: 0 1rem;}
-
-  .overlay-info { margin: 3.9rem auto !important;}
-  .overlay-info h3 {
-    font-size: 1.1rem !important;
-    margin-bottom: 1.3rem !important;
-  } 
-  .overlay-info a {
-    font-size: 1.1rem !important;
-    padding: 0 1.2rem !important;
-  }
-
+  .contact form { padding: 0 1rem; }
+ 
 }
-
-
+  /* 500px-----------*/
+@media screen and (max-width: 500px){
+  .quote{ display: none }
+}
   /* 320px ---------- */
 @media screen and (max-width: 320px){
-	.section {padding: 0 0.3rem;}
-	.skills .features { min-width: 93%;}
-	.navbar .link .icon {left: 14px;}
+  section {padding: 0;}
+  .skills .features { min-width: 93%;}
+  .navbar .link .icon {left: .9rem;}
   .navbar .links-wrapper .link {min-width: 4.3rem;}
-  
-  .item-img img {height: 14rem;}
-
-  .certifications div img {
-    height: 13rem;
-    min-width: 16rem;
-    margin-right: 0;
-  }
-
-  .overlay-info h3,
-  .overlay-info a {font-size: 1rem !important;}
 }
+
+
 
 /*  SCROLL BAR STYLING */
  #scrollStyle::-webkit-scrollbar-track{
@@ -987,7 +1130,7 @@ form input[type=submit]:hover{
 }
 
 .overlay-info{
-  margin: 4rem auto;
+  margin: 4.1rem auto;
   padding: 1rem;
   background: var(--black);
 }
@@ -997,12 +1140,29 @@ form input[type=submit]:hover{
   margin-top: .5rem;
   margin-bottom: 1.7rem;
 }
-
+/* .overlay-info .item-links{
+  padding-top: 1.3rem;
+} */
 .overlay-info a{
   color: var(--white);
-  padding: 0 2rem;
+  padding: 0 2.3rem;
   font-size: 1.3rem;
 }
 .overlay-info a:hover{
   color: var(--clr-secondary-1);
 }
+
+
+ /* Video Background */
+/* .video-bg{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  z-index: -1;
+} */
+
+
