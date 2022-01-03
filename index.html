@@ -58,15 +58,15 @@
 
       <!-- Social Links -->
       <div class="social">
-        <!-- <a href="#" class="twitter" target="_blank"><i class="icon-social-pinterest"></i></a> -->
+	<!-- <a href="#" class="twitter" target="_blank"><i class="icon-social-pinterest"></i></a>-->
         <!-- <a href="#" class="instagram" target="_blank"><i class="icon-social-tumblr"></i></a> -->
         <a href="https://github.com/hossam-dev14" class="github" target="_blank"><i class="icon-social-linkedin"></i></a>
-        <a href="https://www.linkedin.com/in/houssam-ettoubali-05a3841ba/" class="linkdin" target="_blank"><i class="icon-social-github"></i></a>
+        <a href="https://www.linkedin.com/in/houssam-ettoubali/" class="linkdin" target="_blank"><i class="icon-social-github"></i></a>
       </div>
     </aside>
     <!-- Content -->
     <div class="content">
-
+	    
       <!-- Home -->
       <div class="home">
         <h2>Hello there!</h2>
@@ -80,7 +80,6 @@
           Quote
           <span>Quote</span>
           <span>Quote</span>
-          <!-- <span id="inner-txt">"Be your self"</span> -->
           <span id="inner-txt"></span>
         </h2>
       </div>
@@ -100,9 +99,13 @@
   <!-- Nice Scroll -->
   <script src="./js/jquery.nicescroll.min.js"></script>
 
+  <!-- Data file -->
+  <script src="./js/data.js" ></script>
+
   <!-- Costume.js -->
   <script src="./js/main.js"></script>
-<script>
+
+  <script>
     // Quote
     const text = document.querySelector('.quote #inner-txt');
     const header = document.querySelector('.quote #outer-txt');
@@ -118,26 +121,36 @@
       let random = Math.floor(Math.random() * n );
 
       let randomQuote = quote[random].text;
-      text.innerHTML = `${randomQuote}<br/><q class='author'>${quote[random].author}</q>`;
+      text.innerHTML = `${randomQuote}<br/> 
+                      <q class='author'>${quote[random].author}</q>`;
+      // #2dedc9
       });
+    })
+    .catch((error) => {
+      let me = 'hossam-dev14';
+      let err = 'Chek your internet connection, and try again.';
+
+      console.error('Error:', error);
+      text.innerHTML = `${err}<br/><q class='author'>${me}</q>`;      
     });
 
     header.addEventListener('mouseover', e => {
+
       if (text.offsetHeight >= 97 && text.offsetHeight >= 86 ) {
-        childOne.style.transform=`translateY(-${text.offsetHeight-47}px)`;
-        childTwo.style.transform=`translateY(${text.offsetHeight-47}px)`;
-      } if (text.offsetHeight >= 82 && text.offsetHeight >= 75 ) {
-        childOne.style.transform=`translateY(-${text.offsetHeight-35}px)`;
-        childTwo.style.transform=`translateY(${text.offsetHeight-35}px)`;
+        childOne.style.transform=`translateY(-${text.offsetHeight-43}px)`;
+        childTwo.style.transform=`translateY(${text.offsetHeight-43}px)`;
+      } else if (text.offsetHeight >= 82 && text.offsetHeight >= 75 ) {
+        childOne.style.transform=`translateY(-${text.offsetHeight-38}px)`;
+        childTwo.style.transform=`translateY(${text.offsetHeight-38}px)`;
       } else if (text.offsetHeight >= 64){
-        childOne.style.transform=`translateY(-${text.offsetHeight-27}px)`;
-        childTwo.style.transform=`translateY(${text.offsetHeight-27}px)`;
+        childOne.style.transform=`translateY(-${text.offsetHeight-30}px)`;
+        childTwo.style.transform=`translateY(${text.offsetHeight-30}px)`;
       } else if (text.offsetHeight >= 46){
-        childOne.style.transform=`translateY(-${text.offsetHeight-19}px)`;
-        childTwo.style.transform=`translateY(${text.offsetHeight-19}px)`;
+        childOne.style.transform=`translateY(-${text.offsetHeight-22}px)`;
+        childTwo.style.transform=`translateY(${text.offsetHeight-22}px)`;
       } else if (text.offsetHeight >= 53 && text.offsetHeight >= 39){
-        childOne.style.transform=`translateY(-${text.offsetHeight-12}px)`;
-        childTwo.style.transform=`translateY(${text.offsetHeight-12}px)`;
+        childOne.style.transform=`translateY(-${text.offsetHeight-15}px)`;
+        childTwo.style.transform=`translateY(${text.offsetHeight-15}px)`;
       } else{
         childOne.style.transform=`translateY(-27px)`;
         childTwo.style.transform=`translateY(27px)`;
@@ -148,7 +161,8 @@
       childOne.style.transform=`translateY(0)`;
       childTwo.style.transform=`translateY(0)`;
     });
-
   </script>
+
 </body>
 </html>
+
