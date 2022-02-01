@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -53,10 +53,9 @@
 
       <!-- Social Links -->
       <div class="social">
-        <!-- <a href="#" class="twitter" target="_blank"><i class="icon-social-pinterest"></i></a> -->
-        <!-- <a href="#" class="instagram" target="_blank"><i class="icon-social-tumblr"></i></a> -->
-        <a href="https://github.com/hossam-dev14" class="github" target="_blank"><i class="icon-social-linkedin"></i></a>
-        <a href="https://www.linkedin.com/in/houssam-ettoubali-05a3841ba/" class="linkdin" target="_blank"><i class="icon-social-github"></i></a>
+        <div class="social">
+        <a href="https://github.com/hossam-dev14" class="github" target="_blank"><i class="icon-social-github"></i></a>
+        <a href="https://www.linkedin.com/in/houssam-ettoubali/" class="linkdin" target="_blank"><i class="icon-social-linkedin"></i></a>
       </div>
 
     </aside>
@@ -108,40 +107,10 @@
           </div>
         </div>
 
-
         <!-- Certifications -->
         <div class="certifications">
           <h3>Certifications</h3>
-          <div class="cert">
-            <img src="images/cert/Java_certificate.jpg" alt="certifications">
-            <div class="desc">
-              <p>Name: <span>Java</span></p>
-              <p>Source: <span><a href="https://www.sololearn.com/" target="_blank" rel="noopener noreferrer">SOLOLEARN</a></span></p>
-              <p>Date: <span>Febrary 27, 2019</span></p>
-              <p>Verify This Certification: <span><a href="https://www.sololearn.com/Certificate/1068-4539606/jpg/">cert-1068-4539606</a></span></p>
-              <p>My Profile: <span><a href="https://www.sololearn.com/profile/4539606/" target="_blank" rel="noopener noreferrer">Houssam Ettoubali</a></span></p>
-            </div>
-          </div>
-          <div class="cert">
-            <img src="images/cert/RW_Design.jpg" alt="certifications">
-            <div class="desc">
-              <p>Name: <span>Responsive Web Design</span></p>
-              <p>Source: <span><a href="http://freecodecamp.org" target="_blank" rel="noopener noreferrer">FreeCodeCamp</a></span></p>
-              <p>Date: <span>December 11, 2020</span></p>
-              <p>Verify This Certification: <span><a href="https://freecodecamp.org/certification/hossam-dev14/responsive-web-design/">Responsive-Web-Design</a></span></p>
-              <p>My Profile: <span><a href="https://www.freecodecamp.org/hossam-dev14/" target="_blank" rel="noopener noreferrer">@hossam-dev14</a></span></p>
-            </div>
-          </div>
-          <div class="cert">
-            <img src="images/cert/JavaScript_Classes.jpg" alt="certifications">
-            <div class="desc">
-              <p>Name: <span>JavaScript: Classes</span></p>
-              <p>Source: <span><a href="http://linkdinlearning.com" target="_blank" rel="noopener noreferrer">Linkedin LEARNING</a></span></p>
-              <p>Date: <span>December 27, 2020</span></p>
-              <p>Certificate ID: <span>AbrFlIaMUpUZaSK-ATPnvwwN9kFj</span></p>
-              <p>My Profile: <span><a href="https://www.linkedin.com/in/houssam-ettoubali-05a3841ba/" target="_blank" rel="noopener noreferrer">Houssam Ettoubali</a></span></p>
-            </div>
-          </div>
+          <div id="certs"></div>
         </div>
       </section>
 
@@ -169,25 +138,46 @@
   <script>
     const skill = document.querySelector('.skills .box');
     const knowledge = document.querySelector('.knowledges .box');
+    const certs = document.querySelector('#certs');
+
     
     (function(){
       skills.map(e => {
         skill.innerHTML += 
-          `<div class="">
-          <div class="prop">
-            <span>${e.title}</span>
-            <span class="percent">${e.percent}%</span>
-          </div>
-          <div class="progress">
-            <div class="progress-done" data-done=${e.percent}></div>
+          ` <div class="" key=${e.id}>
+              <div class="prop">
+                <span>${e.title}</span>
+                <span class="percent">${e.percent}%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-done" data-done=${e.percent}></div>
+              </div>
             </div>
-          </div>`
+          `
         })
+
       knowledges.map(e => {
         knowledge.innerHTML += 
-          `<span><p>${e.title}</p></span>`
+          `<span key=${e.id}><p>${e.title}</p></span>`
       })
+
+      certifications.map(e => {
+        certs.innerHTML += 
+        `<div class="cert" key=${e.id}>
+            <img src='${e.img}' alt='${e.name}'>
+            <div class="info">
+              <p>Name: <span>${e.name}</span></p>
+              <p>Source: <span>${e.src}</span></p>
+              <p>Delivered: <span>${e.date}</span></p>
+              <p>Verify Certification: <span><a target='_blank' href="${e.verifyCert}" class'external'>${e.name}</a></span></p>
+              <p id='cert_id'>${e.certID ? `Certification ID: <span>${e.certID}</span>` : '' }</p> 
+            </div>
+          </div>`
+    });
+
     })();
+
+    
     
     // ------- Progress
     const progress = document.querySelectorAll('.progress-done');
