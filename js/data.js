@@ -131,7 +131,7 @@ works =
     "img" : "https://user-images.githubusercontent.com/73648971/112833177-473f0400-908e-11eb-953a-a8d03d03fc33.jpg",
     "alt" : "animal-blog",
     "title" : "Animal Blog",
-    "prev_img" : "images/portfolio/animal-blog-preview.jpg",
+    "prev_img" : "https://user-images.githubusercontent.com/73648971/151997109-5a7fdbbb-336e-4040-a07f-2a31bcd3a07c.jpg",
     "preview" : "https://hossam-dev14.github.io/Animal-Blog/",
     "github" : "https://github.com/hossam-dev14/Animal-Blog/"
   },
@@ -149,7 +149,7 @@ works =
     "img" : "https://user-images.githubusercontent.com/73648971/112232119-5100db80-8c38-11eb-9403-1c7396390c4b.png",
     "alt" : "portfolio",
     "title" : "Portfolio",
-    "prev_img" : "images/portfolio/portfolio-preview.jpg",
+    "prev_img" : "https://user-images.githubusercontent.com/73648971/151997336-9b6139d4-336a-4d0b-bd92-6b0f35d3d4ff.jpg",
     "preview" : "https://hossam-dev14.github.io/Portfolio/",
     "github" : "https://github.com/hossam-dev14/Portfolio/"
   },
