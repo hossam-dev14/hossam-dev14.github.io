@@ -23,7 +23,7 @@
   
   <!-- Loading -->
   <div class="loader">
-    <img src="./images/preloader.gif" alt="Loading...">
+    <h3>Loading...</h3>
   </div>
 
   <main class="page">
@@ -60,11 +60,10 @@
 
       <!-- Social Links -->
       <div class="social">
-        <!-- <a href="#" class="twitter" target="_blank"><i class="icon-social-pinterest"></i></a> -->
-        <!-- <a href="#" class="instagram" target="_blank"><i class="icon-social-tumblr"></i></a> -->
-        <a href="https://github.com/hossam-dev14" class="github" target="_blank"><i class="icon-social-linkedin"></i></a>
-        <a href="https://www.linkedin.com/in/houssam-ettoubali-05a3841ba/" class="linkdin" target="_blank"><i class="icon-social-github"></i></a>
+        <a href="https://github.com/hossam-dev14" class="github" target="_blank"><i class="icon-social-github"></i></a>
+        <a href="https://www.linkedin.com/in/houssam-ettoubali/" class="linkdin" target="_blank"><i class="icon-social-linkedin"></i></a>
       </div>
+      
     </aside>
 
 
@@ -103,30 +102,27 @@
             </div>
           </div>
 
-          <form method="POST" action="contact.php" >
+          <form action="https://formspree.io/f/xjvlkbek" method="POST">
             <div class="input-group">
-              <input type="text" name="name" id="name" placeholder="Name"required >
-              <span class="error_message">Please enter at least 5 characters</span>
-
+              <input type="text" name="name" placeholder="Enter name" required >
             </div>
             
             <div class="input-group">
-              <input type="email" name="email" id="email" placeholder="Email" required >
+              <input type="email" name="email" id="email" placeholder="Enter amail" required >
               <span class="error_message">Please enter a valid email</span>
             </div>
 
             <div class="input-group">
-              <input type="number" name="phone" id="phone" placeholder="Phone">
-              <span class="error_message">Please enter a valid email</span>
-
+              <input type="number" name="phone" placeholder="Enter phone">
             </div>
             
             <div class="input-group">
-              <textarea name="message" id="message" cols="30" rows="7" minlength="15" placeholder="Message" required ></textarea>
-              <span class="error_message">Please enter at least 15 characters</span>
+              <textarea name="message" cols="30" rows="7" minlength="15" placeholder="Message" required ></textarea>
             </div>
             
             <input type="submit" value="Send">
+
+            <div id="form-status" style="padding: 1rem 0 .7rem; font-size: 1.13rem;"></div>
           </form>
         </div>
       </section>
@@ -143,59 +139,59 @@
 
   <!-- jQuery files -->
   <script src="./js/jquery3.4.1.min.js"></script>
-
   <!-- Nice Scroll -->
   <script src="./js/jquery.nicescroll.min.js"></script>
-
   <!-- Costume.js -->
   <script src="./js/main.js"></script>
-
   <script>
-    //---------- Validation Form
+    // Submition Form ---------------
     const form = document.querySelector('.contact form');
-    const name = document.querySelector('.contact #name');
     const email = document.querySelector('.contact #email');
-    const message = document.querySelector('.contact #message');
-    const error_msg = document.querySelector('.contact span.error_message');
-    const send_Button = document.querySelector('.contact input[type = submit]');
 
-    form.addEventListener('submit', (e) => {
+    async function handleSubmit(e) {
       e.preventDefault();
+      var status = document.getElementById("form-status");
+      var data = new FormData(e.target);
+      fetch(e.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(res => {
+        status.textContent = "Thanks for your submission!";
+        status.style.color= 'var(--green-light)'
+        form.reset()
+      }).catch(error => {
+        status.textContent = "Oops! There was a problem submitting your form";
+        status.style.color= 'var(--red-light)'
+      });
+    }
 
-    // Validate Name
-    if (name.value.trim().length >= 3) {
-      name.nextElementSibling.classList.remove('d_block');
-    } else {
-      name.nextElementSibling.classList.add('d_block');
+    // Submit event
+    if (email.nextElementSibling.classList.value.includes('d_block') === false ) {
+      form.addEventListener("submit", handleSubmit)
     }
 
     // Validate Email
-    if (validateEmail(email.value) == true) {
-      email.nextElementSibling.classList.remove('d_block');
-    } else {
-      email.nextElementSibling.classList.add('d_block');
+    email.addEventListener('keyup', e =>{
+      if (validateEmail(email.value) === true) {
+        email.nextElementSibling.classList.remove('d_block');
+      } else {
+        email.nextElementSibling.classList.add('d_block');
+      }
+
+      if (email.value == '') {
+        email.nextElementSibling.classList.remove('d_block');
+      }
+    })
+    
+
+    // Validate Email
+    function validateEmail(email) {
+      const regEx = /\S+@\S+\.\S+/;
+      return regEx.test(String(email).toLowerCase()); 
     }
-
-    // Button Value
-    //if (name.value.trim().length >= 3 && validateEmail(email.value) == true) {
-    //  send_Button.setAttribute('value', 'Sending...');
-    //  send_Button.setAttribute('disabled', 'true');
-    //  send_Button.style.cursor = "wait";
-    //}
-
-    if(validateEmail(email.value) == true) {
-    	form.reset();
-    }
-
-	
-  })
-
-  // Validate Email
-  function validateEmail(email) {
-    const regEx = /\S+@\S+\.\S+/;
-    return regEx.test(String(email).toLowerCase()); 
-  }
-  
   </script>
   
 </body>
