@@ -9,28 +9,23 @@ skills =
   },
   {
     "id": 2,
-    "title" : "CSS",
-    "percent" : 73
+    "title" : "JavaScript",
+    "percent" : 77
   },
   {
     "id": 3,
-    "title" : "JavaScript",
+    "title" : "ReactJS & NextJS",
     "percent" : 70
   },
   {
     "id": 4,
-    "title" : "ReactJS & NextJS",
-    "percent" : 69
+    "title" : "NodeJS & ExpressJS",
+    "percent" : 70
   },
   {
     "id": 5,
-    "title" : "NodeJS & ExpressJS",
-    "percent" : 60
-  },
-  {
-    "id": 6,
     "title" : "MongoDB",
-    "percent" : 50
+    "percent" : 65
   }
 ];
 
