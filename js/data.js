@@ -4,8 +4,8 @@ skills =
 [
   {
     "id": 1,
-    "title" : "HTML",
-    "percent" : 80
+    "title" : "HTML & CSS",
+    "percent" : 85
   },
   {
     "id": 2,
@@ -38,76 +38,60 @@ knowledges =
 [
   {
     "id": 1,
-    "title" : "ES6",
-  },
-  {
-    "id": 2,
     "title" : "Git & Github",
   },
   {
-    "id": 3,
+    "id": 2,
     "title" : "SEO",
   },
   {
-    "id": 4,
+    "id": 3,
     "title" : "APIs",
-  },
+  }
   {
-    "id": 5,
-    "title" : "NPM & YARN",
-  },
-  {
-    "id": 6,
+    "id": 4,
     "title" : "Hosting & Domains",
   },
   {
-    "id": 7,
+    "id": 5,
     "title" : "Trello & Jira",
   },
   {
-    "id": 8,
+    "id": 6,
     "title" : "JSON & AJAX",
   },
   {
-    "id": 9,
+    "id": 7,
     "title" : "DOM & BOM",
   },
   {
-    "id": 10,
+    "id": 8,
     "title" : "jQuery",
   },
   {
-    "id": 11,
+    "id": 9,
     "title" : "Bootstrap",
   },
   {
-    "id": 12,
+    "id": 10,
     "title" : "TailwindCSS",
   },
   {
-    "id": 13,
+    "id": 11,
     "title" : "JWT",
   },
   {
-    "id": 14,
+    "id": 12,
     "title" : "Postman",
   },
   {
-    "id": 15,
-    "title" : "Socket.IO",
-  },,
-  {
-    "id": 16,
-    "title" : "Nodemailer",
-  },
-  {
-    "id": 17,
+    "id": 13,
     "title" : "Docker",
   },
   {
-    "id": 18,
-    "title" : "Jest",
-  }
+    "id": 14,
+    "title" : "Swagger",
+  },
 ];
 
 
