@@ -19,12 +19,17 @@ skills =
   },
   {
     "id": 4,
-    "title" : "Bootstrap",
-    "percent" : 85
+    "title" : "ReactJS & NextJS",
+    "percent" : 69
   },
   {
     "id": 5,
-    "title" : "React",
+    "title" : "NodeJS & ExpressJS",
+    "percent" : 60
+  },
+  {
+    "id": 6,
+    "title" : "MongoDB",
     "percent" : 50
   }
 ];
@@ -37,7 +42,7 @@ knowledges =
   },
   {
     "id": 2,
-    "title" : "RegEx",
+    "title" : "Git & Github",
   },
   {
     "id": 3,
@@ -49,7 +54,7 @@ knowledges =
   },
   {
     "id": 5,
-    "title" : "NPM",
+    "title" : "NPM & YARN",
   },
   {
     "id": 6,
@@ -57,7 +62,7 @@ knowledges =
   },
   {
     "id": 7,
-    "title" : "PhotoShop",
+    "title" : "Trello & Jira",
   },
   {
     "id": 8,
@@ -65,7 +70,43 @@ knowledges =
   },
   {
     "id": 9,
+    "title" : "DOM & BOM",
+  },
+  {
+    "id": 10,
     "title" : "jQuery",
+  },
+  {
+    "id": 11,
+    "title" : "Bootstrap",
+  },
+  {
+    "id": 12,
+    "title" : "TailwindCSS",
+  },
+  {
+    "id": 13,
+    "title" : "JWT",
+  },
+  {
+    "id": 14,
+    "title" : "Postman",
+  },
+  {
+    "id": 15,
+    "title" : "Socket.IO",
+  },,
+  {
+    "id": 16,
+    "title" : "Nodemailer",
+  },
+  {
+    "id": 17,
+    "title" : "Docker",
+  },
+  {
+    "id": 18,
+    "title" : "Jest",
   }
 ];
 
@@ -137,12 +178,13 @@ works =
   },
   {
     "id": 2,
-    "img" : "https://user-images.githubusercontent.com/73648971/113672496-c5fbf880-96af-11eb-8c37-9484fcd89f90.png",
-    "alt" : "coming-soon-page",
-    "title" : "Coming Soon Page",
+    "img" : "",
+    "alt" : "ImmoMarket",
+    "title" : "ImmoMarket",
+    "desx": "A dynamic real estate market, For real estate advertisements and rental of apartments and houses",
     "prev_img" : "https://user-images.githubusercontent.com/73648971/113672496-c5fbf880-96af-11eb-8c37-9484fcd89f90.png",
-    "preview" : "https://coming-soon-dev14.netlify.app/",
-    "github" : "https://github.com/hossam-dev14/Coming-Soon/"
+    "preview" : "",
+    "github" : "https://github.com/hossam-dev14/ImmoMarket"
   },
   {
     "id": 3,
@@ -153,40 +195,4 @@ works =
     "preview" : "https://hossam-dev14.github.io/Portfolio/",
     "github" : "https://github.com/hossam-dev14/Portfolio/"
   },
-  {
-    "id": 4,
-    "img" : "https://user-images.githubusercontent.com/73648971/113200902-cc7a1280-9260-11eb-8bcb-f034d6bdb924.PNG",
-    "alt" : "404-not-found",
-    "title" : "404 Not Found",
-    "prev_img" : "https://user-images.githubusercontent.com/73648971/113200902-cc7a1280-9260-11eb-8bcb-f034d6bdb924.PNG",
-    "preview" : "https://404-Not-Found-dev14.netlify.app/",
-    "github" : "https://github.com/hossam-dev14/404-Not-Found/"
-  },
-  {
-    "id": 5,
-    "img" : "https://user-images.githubusercontent.com/73648971/156334815-a11ed8ac-1369-4e88-a964-e1c183a90b71.jpg",
-    "alt" : "recipe-page",
-    "title" : "Recipe Page",
-    "prev_img" : "https://user-images.githubusercontent.com/73648971/113791183-00f73e00-973b-11eb-9eda-0fc6678c23df.png",
-    "preview" : "https://recipe-page-dev14.netlify.app",
-    "github" : "https://github.com/hossam-dev14/Recipe-Page"
-  },
-  {
-    "id": 6,
-    "img" : "https://user-images.githubusercontent.com/73648971/113441519-5a333a80-93e6-11eb-884e-9f169bc5b852.png",
-    "alt" : "my-team-pag",
-    "title" : "My Team Page",
-    "prev_img" : "https://user-images.githubusercontent.com/73648971/113441519-5a333a80-93e6-11eb-884e-9f169bc5b852.png",
-    "preview" : "https://my-team-page-dev14.netlify.app",
-    "github" : "https://github.com/hossam-dev14/my-team-page"
-  },
-  {
-  "id": 7,
-  "img" : "https://user-images.githubusercontent.com/73648971/151848731-29ac4955-63d4-4b39-904e-0f75611c2b56.png",
-  "alt" : "beard-oil-landing-page",    
-  "title" : "Beard Oil Landing Page",
-  "prev_img" : "https://user-images.githubusercontent.com/73648971/118375094-0ef87400-b5af-11eb-83c6-147f085b913f.png",
-  "preview" : "https://beard-oil-landing-page-dev14.netlify.app",
-  "github" : "https://github.com/hossam-dev14/beard-oil-landing-page"
-  }
 ]
