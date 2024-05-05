@@ -5,7 +5,7 @@ Click here to preview:  https://hossam-dev14.github.io
 
 ## Contact
 
-- Gmail [hossam-dev14](mailto:hossamdev14@gmail.com)
+- Gmail [hossam-dev14](mailto:hossamtoubali@gmail.com)
+- Linkedin [houssam-ettoubali](https://www.linkedin.com/in/houssam-ettoubali/)
 - Website [hossam-dev14](https://hossam-dev14.github.io/)
-- Twitter [@hossam-dev](https://twitter.com/hossam-dev)
-
+        <a href="" class="linkdin" target="_blank"><i class="icon-social-linkedin"></i></a>
