@@ -42,7 +42,7 @@ knowledges =
   {
     "id": 3,
     "title" : "APIs",
-  }
+  },
   {
     "id": 4,
     "title" : "Hosting & Domains",
