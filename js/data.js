@@ -150,9 +150,9 @@ works =
     "id": 1,
     "img" : "https://github-production-user-asset-6210df.s3.amazonaws.com/73648971/328004735-28227b48-5346-4499-94ea-f95b53d09b6d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240505%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240505T102338Z&X-Amz-Expires=300&X-Amz-Signature=3deb25780fe894c5f3933a3886ae3117436ca15db95d2a6d761d884785bb1ca9&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=763128391",
     "github" : "https://github.com/hossam-dev14/tech_innovate",
-    "alt" : "ImmoMarket",
+    "alt" : "Teck Innovate",
     "title" : "Teck Innovate",
-    "desx": "A dynamic real estate market, For real estate advertisements and rental of apartments and houses",
+    "desx": "A portfoli website showcases my work and experience as a full-stack web developer.  ",
     "prev_img" : "https://github-production-user-asset-6210df.s3.amazonaws.com/73648971/328004735-28227b48-5346-4499-94ea-f95b53d09b6d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240505%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240505T102338Z&X-Amz-Expires=300&X-Amz-Signature=3deb25780fe894c5f3933a3886ae3117436ca15db95d2a6d761d884785bb1ca9&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=763128391",
     "preview" : "https://tech-innovate-14.vercel.app/"
   },
