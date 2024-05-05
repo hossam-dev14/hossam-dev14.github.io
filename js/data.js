@@ -150,8 +150,8 @@ works =
     "id": 1,
     "img" : "https://private-user-images.githubusercontent.com/73648971/328014397-24836b5d-7162-4e55-92b5-5ffb6ddfd3bf.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQ5MDk0OTcsIm5iZiI6MTcxNDkwOTE5NywicGF0aCI6Ii83MzY0ODk3MS8zMjgwMTQzOTctMjQ4MzZiNWQtNzE2Mi00ZTU1LTkyYjUtNWZmYjZkZGZkM2JmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA1MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNTA1VDExMzk1N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQ3ZTFlMTQ0ODQ1MDM3NzcwMzIyMDRmZGE0MDZhZWQxNGEwMWEzOGMwNDkxMDI3ZGMwYjI4OWQ5ZTgwYWU2MmUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.aXjD9y0Etsj6rfCB0N_vqHlWzw8F3ia0LvRwvrLxBqo",
     "github" : "https://github.com/hossam-dev14/tech_innovate",
-    "alt" : "Teck Innovate",
-    "title" : "Teck Innovate",
+    "alt" : "Techinnovate",
+    "title" : "Tech Innovate",
     "desx": "A portfoli website showcases my work and experience as a full-stack web developer.  ",
     "prev_img" : "https://private-user-images.githubusercontent.com/73648971/328014397-24836b5d-7162-4e55-92b5-5ffb6ddfd3bf.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQ5MDk0OTcsIm5iZiI6MTcxNDkwOTE5NywicGF0aCI6Ii83MzY0ODk3MS8zMjgwMTQzOTctMjQ4MzZiNWQtNzE2Mi00ZTU1LTkyYjUtNWZmYjZkZGZkM2JmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA1MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNTA1VDExMzk1N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQ3ZTFlMTQ0ODQ1MDM3NzcwMzIyMDRmZGE0MDZhZWQxNGEwMWEzOGMwNDkxMDI3ZGMwYjI4OWQ5ZTgwYWU2MmUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.aXjD9y0Etsj6rfCB0N_vqHlWzw8F3ia0LvRwvrLxBqo",
     "preview" : "https://tech-innovate-14.vercel.app/"
