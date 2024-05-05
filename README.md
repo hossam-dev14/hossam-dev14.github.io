@@ -12,10 +12,9 @@ Click here to preview:  https://hossam-dev14.github.io
 
 ## Technologies
 - jQuery: A popular JavaScript library that simplifies common tasks like DOM manipulation and event handling.
-- Nice Scroll: (Likely a library) Enhances the scrolling experience on your web pages, potentially making it smoother or adding visual effects.
-- Simple Line Icons: (Likely a library) Provides a set of pre-designed icons you can easily integrate into your web pages.
-- Formspree: (Likely a service) Simplifies handling form submissions on your web pages. It might eliminate the need for server-side scripting to receive and process form data.
-
+- Nice Scroll: A library enhances the scrolling experience on your web pages, potentially making it smoother or adding visual effects.
+- Simple Line Icons: A library provides a set of pre-designed icons you can easily integrate into your web pages.
+- Formspree: Simplifies to handling form submissions or email service for HTML & JavaScript forms.
 
 
 ## Contact
