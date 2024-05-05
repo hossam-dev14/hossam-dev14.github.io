@@ -495,7 +495,7 @@ section .title span{
 }
 
 .skills_content .features{
-  width: 60%;
+  width: 84%;
   min-width: 18rem;
   max-width: 36rem;
   padding-left: 0;
@@ -504,7 +504,7 @@ section .title span{
 
 /* 11 KNOWLEDGES ----------------------------*/
 .knowledges{
-  width: 64%;
+  width: 84%;
   min-width: 18rem;
   max-width: 37rem;
 }
@@ -528,8 +528,8 @@ section .title span{
   padding-top: .7rem;
 }
 .certifications div img{
-  width: 21rem;
-  height: 14rem;
+  width: 27rem;
+  height: 17rem;
   min-width: 18rem;
   border-radius: 3px;
   margin-bottom: 1.5rem;
@@ -537,7 +537,7 @@ section .title span{
   margin-left: 0;
 }
 .certifications .info{
-  padding: 0 1.7rem;
+  padding: 0 3rem;
   width: 25rem;
 }
 .certifications .info span,
@@ -853,7 +853,7 @@ input[type=submit]:focus{
   .sidebar .menu-icon {
     display: block;
   }
-  .skills .features {min-width: 76%}
+  .skills .features {min-width: 93%}
   .contact {
     grid-template-columns: 1fr;
     padding: 0;
@@ -879,7 +879,7 @@ input[type=submit]:focus{
     align-items: center;
   }
   .sidebar .menu-icon { display: none;}
-  .sidebar .profile img {margin: 1.7rem 1rem .5rem;width: 37%;}
+  .sidebar .profile img {margin: 1.7rem 1rem .5rem; width: 37%;}
   .sidebar .profile figcaption {
     text-align: center;
     font-size: 1.1rem;
@@ -955,7 +955,7 @@ input[type=submit]:focus{
   
   .quote h2 #inner-txt{top: 34%;}
 
-  .skills .features {min-width: 83%;}
+  .skills .features {min-width: 99%;}
 
   /* CONTACT */
   .contact .email {
