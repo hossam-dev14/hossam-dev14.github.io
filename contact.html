@@ -159,11 +159,11 @@
             'Accept': 'application/json'
         }
       }).then(res => {
-        status.textContent = "Thanks for your submission!";
+        status.textContent = "Email sent successfully!";
         status.style.color= 'var(--green-light)'
         form.reset()
       }).catch(error => {
-        status.textContent = "Oops! There was a problem submitting your form";
+        status.textContent = "Oops! Failed to send email. Please try again.";
         status.style.color= 'var(--red-light)'
       });
     }
