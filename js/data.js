@@ -148,12 +148,12 @@ works =
 [
   {
     "id": 1,
-    "img" : "https://github-production-user-asset-6210df.s3.amazonaws.com/73648971/328004735-28227b48-5346-4499-94ea-f95b53d09b6d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240505%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240505T102338Z&X-Amz-Expires=300&X-Amz-Signature=3deb25780fe894c5f3933a3886ae3117436ca15db95d2a6d761d884785bb1ca9&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=763128391",
+    "img" : "https://private-user-images.githubusercontent.com/73648971/328014397-24836b5d-7162-4e55-92b5-5ffb6ddfd3bf.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQ5MDk0OTcsIm5iZiI6MTcxNDkwOTE5NywicGF0aCI6Ii83MzY0ODk3MS8zMjgwMTQzOTctMjQ4MzZiNWQtNzE2Mi00ZTU1LTkyYjUtNWZmYjZkZGZkM2JmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA1MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNTA1VDExMzk1N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQ3ZTFlMTQ0ODQ1MDM3NzcwMzIyMDRmZGE0MDZhZWQxNGEwMWEzOGMwNDkxMDI3ZGMwYjI4OWQ5ZTgwYWU2MmUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.aXjD9y0Etsj6rfCB0N_vqHlWzw8F3ia0LvRwvrLxBqo",
     "github" : "https://github.com/hossam-dev14/tech_innovate",
     "alt" : "Teck Innovate",
     "title" : "Teck Innovate",
     "desx": "A portfoli website showcases my work and experience as a full-stack web developer.  ",
-    "prev_img" : "https://github-production-user-asset-6210df.s3.amazonaws.com/73648971/328004735-28227b48-5346-4499-94ea-f95b53d09b6d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240505%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240505T102338Z&X-Amz-Expires=300&X-Amz-Signature=3deb25780fe894c5f3933a3886ae3117436ca15db95d2a6d761d884785bb1ca9&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=763128391",
+    "prev_img" : "https://private-user-images.githubusercontent.com/73648971/328014397-24836b5d-7162-4e55-92b5-5ffb6ddfd3bf.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQ5MDk0OTcsIm5iZiI6MTcxNDkwOTE5NywicGF0aCI6Ii83MzY0ODk3MS8zMjgwMTQzOTctMjQ4MzZiNWQtNzE2Mi00ZTU1LTkyYjUtNWZmYjZkZGZkM2JmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA1MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNTA1VDExMzk1N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQ3ZTFlMTQ0ODQ1MDM3NzcwMzIyMDRmZGE0MDZhZWQxNGEwMWEzOGMwNDkxMDI3ZGMwYjI4OWQ5ZTgwYWU2MmUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.aXjD9y0Etsj6rfCB0N_vqHlWzw8F3ia0LvRwvrLxBqo",
     "preview" : "https://tech-innovate-14.vercel.app/"
   },
   {
