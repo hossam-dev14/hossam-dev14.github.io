@@ -158,11 +158,11 @@ works =
   },
   {
     "id": 2,
-    "img" : "",
+    "img" : "https://raw.githubusercontent.com/hossam-dev14/ImmoMarket/main/immomarket_real_estate.png",
     "alt" : "ImmoMarket",
     "title" : "ImmoMarket",
     "desx": "A dynamic real estate market, For real estate advertisements and rental of apartments and houses",
-    "prev_img" : "https://user-images.githubusercontent.com/73648971/113672496-c5fbf880-96af-11eb-8c37-9484fcd89f90.png",
+    "prev_img" : "https://raw.githubusercontent.com/hossam-dev14/ImmoMarket/main/immomarket_real_estate.png",
     "preview" : "",
     "github" : "https://github.com/hossam-dev14/ImmoMarket"
   },
@@ -188,7 +188,7 @@ works =
     "id": 5,
     "img" : "https://raw.githubusercontent.com/hossam-dev14/recipe_crud_api/main/Recipe_api.png",
     "alt" : "Recipe_Rest_API",
-    "title" : "Recipe_Rest_API",
+    "title" : "Recipe Restfull API",
     "prev_img" : "https://github.com/hossam-dev14/recipe_crud_api/assets/73648971/1bb68823-cb99-4993-91c9-f431213b5fbb",
     "preview" : "https://recipe-rest-api-fytu.onrender.com/api-docs/",
     "github" : "https://github.com/hossam-dev14/recipe_crud_api"
