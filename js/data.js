@@ -89,7 +89,7 @@ certifications = [
   {
     id: 0,
     name: "Concepteur Developpeur d'Application Full stack MERN",
-    img: "https://github-production-user-asset-6210df.s3.amazonaws.com/73648971/350718733-6d953158-a120-4390-acba-528a07937671.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240720%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240720T191120Z&X-Amz-Expires=300&X-Amz-Signature=b2ba2ea50ed7ccdc75df6f0f6b75f4aeefce7e200220c6864feb5ccb59944699&X-Amz-SignedHeaders=host&actor_id=73648971&key_id=0&repo_id=425853170",
+    img: "https://github-production-user-asset-6210df.s3.amazonaws.com/73648971/350720249-d6e6566e-3c9e-4e0f-b798-4f78d0c48a56.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240720%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240720T193414Z&X-Amz-Expires=300&X-Amz-Signature=84df33f3b02e9cdf6a21389a604a3a8ea615af426be94eb6e2362d5fb837ad9b&X-Amz-SignedHeaders=host&actor_id=73648971&key_id=0&repo_id=425853170",
     alt: "mern-stack-developer",
     src: "Simplon",
     date: "May 9, 2024",
