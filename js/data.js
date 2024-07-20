@@ -93,6 +93,26 @@ knowledges =
 certifications = 
 [
   {
+    id: 0,
+    name: "Concepteur Developpeur d'Application Full stack MERN",
+    imageUrl: "https://github.com/user-attachments/assets/6d953158-a120-4390-acba-528a07937671",
+    description: "A MERN Stack bootcamp from",
+    alt: "mern-stack-developer",
+    from: "Simplon",
+    url: "https://www.simplon.ma/",
+    date: "May 9, 2024",
+  },
+  {
+    "id": 0,
+    "name": "Concepteur Developpeur d'Application Full stack MERN",
+    "img" : "https://user-images.githubusercontent.com/73648971/151952865-7c015e7d-5d02-4ed9-8dd4-e80ea54ba924.png",
+    "alt" : "mern-stack-developer",
+    "src": "Simplon",
+    "date": "May 9, 2024",
+    "verifyCert": "",
+    "certID":""
+  },
+   {
     "id": 1,
     "name": "Front-End Web UI Frameworks and Tools: Bootstrap 4",
     "img" : "https://user-images.githubusercontent.com/73648971/151952865-7c015e7d-5d02-4ed9-8dd4-e80ea54ba924.png",
@@ -151,14 +171,24 @@ certifications =
 works = 
 [
   {
+    "id": 0,
+    "img" : "https://github.com/user-attachments/assets/516aa752-2039-4a7a-8984-a31b5ac06a6e",
+    "alt" : "h-dev14",
+    "title" : "h-dev14 ",
+    "desx": "My NextJS portfoli website showcases my work and experience as a full-stack web developer.",
+    "prev_img" : "https://github.com/user-attachments/assets/04d71608-6c55-4f30-9ccd-b337087d3e2e",
+    "preview" : "https://h-dev14.vercel.app/"
+    "github" : "https://h-dev14.vercel.app/",
+  },
+{
     "id": 1,
     "img" : "https://raw.githubusercontent.com/hossam-dev14/tech_innovate/main/TechInnovate%20preveiw.png",
-    "github" : "https://github.com/hossam-dev14/tech_innovate",
     "alt" : "TechInnovate",
     "title" : "TechInnovate",
     "desx": "A portfoli website showcases my work and experience as a full-stack web developer.  ",
     "prev_img" : "https://raw.githubusercontent.com/hossam-dev14/tech_innovate/main/TechInnovate%20preveiw.png",
     "preview" : "https://tech-innovate-14.vercel.app/"
+    "github" : "https://github.com/hossam-dev14/tech_innovate",
   },
   {
     "id": 2,
@@ -197,4 +227,5 @@ works =
     "preview" : "https://recipe-rest-api-fytu.onrender.com/api-docs/",
     "github" : "https://github.com/hossam-dev14/recipe_crud_api"
   },
+  
 ]
